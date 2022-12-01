@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int t,x;
+	cin>>t;
+	while(t--)
+	{ set<int>s;
+		long long p=0,q=0;
+		cin>>x;
+	 for(long long i=1;i<1000000;i++){ 
+	    p=i*i;
+	    q=i*i*i;
+	    if(p<=x) s.insert(p);
+	      if(q<=x) s.insert(q);
+	    if(p>x && q>x)break;
+	}
+	cout<<s.size()<<endl;
+	}
+	
+}
