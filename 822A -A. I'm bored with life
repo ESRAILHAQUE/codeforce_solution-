@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int a,b,k=1;
+	cin>>a>>b;
+	int n=min(a,b);
+	for(int i=1;i<=n;i++){
+		k=k*i;
+		}
+	cout<<k;
+}
